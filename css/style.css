@@ -860,6 +860,9 @@ body{
     .testimonial .owl-nav .owl-next {
         top: -30px;
     }
+    .mobile-column-reverse{
+    flex-direction: column-reverse;
+}
 }
 /*** testimonial End ***/
 
@@ -905,6 +908,3 @@ body{
 /*** copyright end ***/
 
 
-.mobile-column-reverse{
-    flex-direction: column-reverse;
-}
