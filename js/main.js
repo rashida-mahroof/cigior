@@ -101,3 +101,26 @@
 
 })(jQuery);
 
+
+// Contact Form Submission using Formspree
+document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var form = this;
+    var data = new FormData(form);
+    fetch(form.action, {
+        method: "POST",
+        body: data,
+        headers: { 'Accept': 'application/json' }
+    }).then(response => {
+        if (response.ok) {
+            document.getElementById('formResult').innerHTML = '<div class="alert alert-success">Thank you! Your message has been sent.</div>';
+            form.reset();
+        } else {
+            response.json().then(data => {
+                document.getElementById('formResult').innerHTML = '<div class="alert alert-danger">' + (data.errors ? data.errors.map(e=>e.message).join("<br>") : 'There was an error sending your message.') + '</div>';
+            });
+        }
+    }).catch(() => {
+        document.getElementById('formResult').innerHTML = '<div class="alert alert-danger">Network error. Please try again.</div>';
+    });
+});

@@ -969,3 +969,32 @@ body{
     margin-top: 0;
   }
 }
+/* Glass Card Styles  branches*/
+.glass-card {
+    background: rgba(255,255,255,0.78);
+    border-radius: 2rem;
+    box-shadow: 0 6px 36px 0 rgba(26,37,80,0.12);
+    border: 1px solid rgba(200,210,230,0.14);
+    backdrop-filter: blur(7px);
+    transition: box-shadow .22s, transform .22s;
+    position: relative;
+}
+.glass-card:hover {
+    box-shadow: 0 14px 44px 0 rgba(26,37,80,0.16), 0 2px 8px 0 rgba(26,37,80,0.12);
+    transform: translateY(-3px) scale(1.025);
+    z-index: 2;
+}
+.branch-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    font-size: 1.7rem;
+    border-radius: 50%;
+    color: #fff;
+    box-shadow: 0 2px 14px 0 rgba(0,0,0,0.09);
+}
+@media (max-width: 991px) {
+    .glass-card { margin-bottom: 2.5rem; }
+}

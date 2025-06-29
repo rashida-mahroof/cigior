@@ -42,28 +42,70 @@
 
         <!-- Navbar & Hero Start -->
         <div class="container-fluid position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
-                    <img src="img/logo.png" alt="Logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="product.html" class="nav-item nav-link">Our Product</a>
-                        <a href="blog.html" class="nav-item nav-link active">Blog</a>
-                        
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                    
-                    </div>
-                    
-                     <a href="tel:+ 971 42851918" class="btn btn-primary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4">Call Us</a>
+             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <img src="img/logo.png" alt="Logo">
+            </a>
+            <!-- Hamburger/Close button for mobile -->
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="fa fa-bars fs-2"></span>
+            </button>
+
+            <!-- Normal Navbar (Desktop) -->
+            <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="product.html" class="nav-item nav-link">Our Product</a>
+                    <a href="blog.html" class="nav-item nav-link active">Achievement</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-            </nav>
+                <div class="d-flex flex-wrap gap-2 ms-4">
+                    <a href="tel:+97142851918"
+                        class="btn btn-primary call-btn rounded-pill d-inline-flex align-items-center flex-shrink-0 py-2 px-4">
+                        <i class="fa fa-phone me-2"></i>Call Us
+                    </a>
+                    <a href="mailto:info@cigior.com"
+                        class="btn btn-outline-primary mail-btn rounded-pill d-inline-flex align-items-center flex-shrink-0 py-2 px-4">
+                        <i class="fa fa-envelope me-2"></i>Mail Us
+                    </a>
+                </div>
+            </div>
+
+            <!-- Offcanvas Sidebar (Mobile & Tablet) -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header border-bottom pb-2">
+                    <a href="index.html" class="navbar-brand p-0">
+                        <img src="img/logo.png" alt="Logo" style="height:38px;">
+                    </a>
+                    <button type="button" class="btn-close text-reset ms-3" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-flex flex-column justify-content-between">
+                    <div>
+                        <ul class="navbar-nav ms-auto py-3">
+                            <li><a href="index.html" class="nav-item nav-link  px-2 py-2">Home</a></li>
+                            <li><a href="about.html" class="nav-item nav-link px-2 py-2">About</a></li>
+                            <li><a href="product.html" class="nav-item nav-link px-2 py-2">Our Product</a></li>
+                            <li><a href="blog.html" class="nav-item nav-link px-2 py-2 active">Achievement</a></li>
+                            <li><a href="contact.html" class="nav-item nav-link px-2 py-2">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="d-flex flex-column gap-3 py-3">
+                        <a href="tel:+97142851918"
+                            class="btn btn-primary call-btn rounded-pill d-inline-flex align-items-center flex-shrink-0 py-2 px-4 w-100">
+                            <i class="fa fa-phone me-2"></i>Call Us
+                        </a>
+                        <a href="mailto:info@cigior.com"
+                            class="btn btn-outline-primary mail-btn rounded-pill d-inline-flex align-items-center flex-shrink-0 py-2 px-4 w-100">
+                            <i class="fa fa-envelope me-2"></i>Mail Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
             <!-- Header Start -->
             <div class="container-fluid bg-breadcrumb">
@@ -98,66 +140,121 @@
         </div>
         <!-- Modal Search End -->
 
-             <!-- Blog Start -->
-<div class="container-fluid blog pb-5 py-5">
-    <div class="container pb-5">
-        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-            <h4 class="text-uppercase text-primary">Our Blog</h4>
-            <h1 class="display-3 text-capitalize mb-3">Latest Blog & News</h1>
+     <!-- Achievements List Section Start -->
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h4 class="text-uppercase" style="color:#1a2550; letter-spacing:2px;">Our Journey</h4>
+        <h1 class="fw-bold mb-3" style="font-family:'Playfair Display',serif;">Full List of Achievements</h1>
+        <p class="text-muted" style="font-size:1.1rem;">Every recognition and partnership is a story of commitment and excellence.</p>
+    </div>
+    
+    <!-- Achievement Card 1 -->
+    <div class="card mb-4 border-0 shadow-lg rounded-4">
+        <div class="row g-0 align-items-center">
+            <div class="col-md-4">
+                <div class="overflow-hidden rounded-start-4 achievement-img-hover">
+                    <img src="img/CIGGYSPOT TOBACCO TRADINGÂ FZE_page-0001.jpg" class="img-fluid w-100" alt="50th Armed Forces">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body p-4">
+                    <div class="mb-2">
+                        <span class="badge rounded-pill" style="background:#1a2550; color:#fff; font-size:1rem;">May 6, 2025</span>
+                    </div>
+                    <h4 class="card-title fw-bold mb-2" style="color:#1a2550;">50th Anniversary – UAE Armed Forces</h4>
+                    <p class="card-text text-muted mb-2" style="font-size:1.06rem;">
+                        To mark five decades of valor and unity, Ciggyspot Tobacco Trading FZE joined in the nation’s celebration of the UAE Armed Forces 50th Anniversary. 
+                        <br>
+                        The commemorative event recognized the leadership of H.H. Sheikh Mohammed Bin Zayed Al Nahyan and H.H. Sheikh Mohammed Bin Rashid Al Maktoum, and honored the dedication of Emirati soldiers who have secured the nation's prosperity and security. 
+                        <br>
+                        Our partnership in these national moments reinforces our pride in contributing to the UAE’s remarkable journey.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="row g-4 justify-content-center">
-            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="img/Cigior.jpg" class="img-fluid rounded-top w-100" alt="Cigior Variants">
-                        <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Jun 30 2025</div>
-                    </div>
-                    <div class="blog-content rounded-bottom p-4">
-                        <a href="#" class="h4 d-inline-block mb-3">Discover the Cigior Experience</a>
-                        <p>Explore the unique features of Cigior's premium blends. See how our variants set new standards in quality and flavor.</p>
-                        <a href="#" class="fw-bold text-secondary">Read More <i class="fa fa-angle-right"></i></a>
-                    </div>
+    </div>
+    <!-- Achievement Card 2 -->
+    <div class="card mb-4 border-0 shadow-lg rounded-4">
+        <div class="row g-0 align-items-center flex-md-row-reverse">
+            <div class="col-md-4">
+                <div class="overflow-hidden rounded-end-4 achievement-img-hover">
+                    <img src="img/Mr. HAKKIM AKKALLATH_page-0001.jpg" class="img-fluid w-100" alt="Certificate of Appreciation">
                 </div>
             </div>
-            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="img/blog.jpg" class="img-fluid rounded-top w-100" alt="Cigior Variants">
-                        <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Jan 30 2025</div>
+            <div class="col-md-8">
+                <div class="card-body p-4">
+                    <div class="mb-2">
+                        <span class="badge rounded-pill" style="background:#ab2239; color:#fff; font-size:1rem;">Feb 10, 2025</span>
                     </div>
-                    <div class="blog-content rounded-bottom p-4">
-                        <a href="#" class="h4 d-inline-block mb-3">Discover the Cigior Experience</a>
-                        <p>Explore the unique features of Cigior's premium blends. See how our variants set new standards in quality and flavor.</p>
-                        <a href="#" class="fw-bold text-secondary">Read More <i class="fa fa-angle-right"></i></a>
-                    </div>
+                    <h4 class="card-title fw-bold mb-2" style="color:#ab2239;">Certificate of Appreciation</h4>
+                    <p class="card-text text-muted mb-2" style="font-size:1.06rem;">
+                        Ciggyspot Tobacco Trading FZE was honored with a Certificate of Appreciation from Al Diwan Al Malaki Magazine, recognizing our company’s valuable contributions to community initiatives.
+                        <br>
+                        The award, received by Mr. Hakkim Akkallath, reflects our commitment to building strong, impactful partnerships across the UAE. We are grateful for the trust and recognition shown by such prestigious institutions.
+                        <br>
+                        This achievement inspires us to further elevate our standards in business and social responsibility.
+                    </p>
                 </div>
             </div>
-            <!-- Repeat for other blog items with your new images -->
+        </div>
+    </div>
+    <!-- Achievement Card 3 -->
+    <div class="card mb-4 border-0 shadow-lg rounded-4">
+        <div class="row g-0 align-items-center">
+            <div class="col-md-4">
+                <div class="overflow-hidden rounded-start-4 achievement-img-hover">
+                    <img src="img/blog.jpg" class="img-fluid w-100" alt="Year of Community 2025">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body p-4">
+                    <div class="mb-2">
+                        <span class="badge rounded-pill" style="background:#138496; color:#fff; font-size:1rem;">Jun 28, 2025</span>
+                    </div>
+                    <h4 class="card-title fw-bold mb-2" style="color:#138496;">2025: The Year of Community</h4>
+                    <p class="card-text text-muted mb-2" style="font-size:1.06rem;">
+                        In 2025, the UAE announced "The Year of Community" to champion inclusion, harmony, and shared growth. Ciggyspot proudly supported initiatives aligned with this vision, helping foster unity and social progress.
+                        <br>
+                        Our involvement ranged from awareness campaigns to hands-on engagement with local communities, supporting the leadership’s goal of building a brighter, more connected future for all residents and citizens.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Achievement Card 4 -->
+    <div class="card mb-4 border-0 shadow-lg rounded-4">
+        <div class="row g-0 align-items-center flex-md-row-reverse">
+            <div class="col-md-4">
+                <div class="overflow-hidden rounded-end-4 achievement-img-hover">
+                    <img src="img/Cigior.jpg" class="img-fluid w-100" alt="Cigior Premium Blends">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body p-4">
+                    <div class="mb-2">
+                        <span class="badge rounded-pill" style="background:#b89037; color:#fff; font-size:1rem;">Jun 30, 2025</span>
+                    </div>
+                    <h4 class="card-title fw-bold mb-2" style="color:#b89037;">Cigior Premium Blends Launch</h4>
+                    <p class="card-text text-muted mb-2" style="font-size:1.06rem;">
+                        The launch of Cigior Premium Blends set a new benchmark for excellence in tobacco. Our new line delivers not just superior taste, but also upholds the heritage and artistry of fine tobacco blending.
+                        <br>
+                        This milestone reflects our dedication to innovation, quality, and the evolving preferences of discerning consumers across the region.
+                        <br>
+                        Cigior now stands as a proud symbol of refinement and tradition in the premium tobacco sector.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-<!-- Blog End -->
+        <!-- Achievements List Section End -->
 
 
-        <!-- Footer Start -->
+
+      <!-- Footer Start -->
         <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
     <div class="container py-5">
-        <div class="row g-5 mb-5 align-items-center">
-            <div class="col-lg-7">
-                <div class="position-relative mx-auto">
-                    <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email to Subscribe">
-                    <button type="button" class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Subscribe</button>
-                </div>
-            </div>
-            <div class="col-lg-5">
-                <div class="d-flex align-items-center justify-content-center justify-content-lg-end">
-                    <a class="btn btn-secondary btn-md-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-secondary btn-md-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-secondary btn-md-square rounded-circle me-3" href="#"><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-secondary btn-md-square rounded-circle me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-        </div>
+        
         <div class="row g-5">
             <div class="col-md-6 col-lg-6 col-xl-3">
                 <div class="footer-item d-flex flex-column">
@@ -166,23 +263,25 @@
                         <p class="mb-3">
                             Cigior Tobacco Trading FZE stands as a leading name in the premium tobacco industry, specializing in the global trade, distribution, and export of high-quality cigarette products. Experience reliability, compliance, and a commitment to excellence with every partnership.
                         </p>
+                        
                     </div>
-                    <div class="position-relative">
-                        <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
-                        <button type="button" class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">Sign Up</button>
-                    </div>
+                     <div class="d-flex ">
+                    <a class="btn btn-primary btn-md-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f text-light" ></i></a>
+                    <a class="btn btn-primary btn-md-square rounded-circle me-3" href="#"><i class="fab fa-twitter text-light" ></i></a>
+                    <a class="btn btn-primary btn-md-square rounded-circle me-3" href="#"><i class="fab fa-instagram text-light" ></i></a>
+                    <a class="btn btn-primary btn-md-square rounded-circle me-0" href="#"><i class="fab fa-linkedin-in text-light" ></i></a>
+                </div>
+                   
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 col-xl-3">
                 <div class="footer-item d-flex flex-column">
                     <h4 class="text-white mb-4">Quick Links</h4>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> About Cigior</a>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> Our Products</a>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> Services</a>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> Trading Network</a>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> Blog</a>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
+                    <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Cigior</a>
+                    <a href="product.html"><i class="fas fa-angle-right me-2"></i> Our Products</a>
+                    <a href="blog.html"><i class="fas fa-angle-right me-2"></i> Achievements</a>
+                    <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+                    
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 col-xl-3">

@@ -42,28 +42,69 @@
         <!-- Navbar & Hero Start -->
         <div class="container-fluid position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
-                    
-                    <img src="img/logo.png" alt="Logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link active">About</a>
-                         <a href="product.html" class="nav-item nav-link">Our Product</a>
-                        <a href="blog.html" class="nav-item nav-link">Blog</a>
-                        
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                    
-                    </div>
-                    
-                     <a href="tel:+ 971 42851918" class="btn btn-primary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4">Call Us</a>
+            <a href="index.html" class="navbar-brand p-0">
+                <img src="img/logo.png" alt="Logo">
+            </a>
+            <!-- Hamburger/Close button for mobile -->
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="fa fa-bars fs-2"></span>
+            </button>
+
+            <!-- Normal Navbar (Desktop) -->
+            <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link ">Home</a>
+                    <a href="about.html" class="nav-item nav-link active">About</a>
+                    <a href="product.html" class="nav-item nav-link">Our Product</a>
+                    <a href="blog.html" class="nav-item nav-link">Achievement</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-            </nav>
+                <div class="d-flex flex-wrap gap-2 ms-4">
+                    <a href="tel:+97142851918"
+                        class="btn btn-primary call-btn rounded-pill d-inline-flex align-items-center flex-shrink-0 py-2 px-4">
+                        <i class="fa fa-phone me-2"></i>Call Us
+                    </a>
+                    <a href="mailto:info@cigior.com"
+                        class="btn btn-outline-primary mail-btn rounded-pill d-inline-flex align-items-center flex-shrink-0 py-2 px-4">
+                        <i class="fa fa-envelope me-2"></i>Mail Us
+                    </a>
+                </div>
+            </div>
+
+            <!-- Offcanvas Sidebar (Mobile & Tablet) -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header border-bottom pb-2">
+                    <a href="index.html" class="navbar-brand p-0">
+                        <img src="img/logo.png" alt="Logo" style="height:38px;">
+                    </a>
+                    <button type="button" class="btn-close text-reset ms-3" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-flex flex-column justify-content-between">
+                    <div>
+                        <ul class="navbar-nav ms-auto py-3">
+                            <li><a href="index.html" class="nav-item nav-link  px-2 py-2">Home</a></li>
+                            <li><a href="about.html" class="nav-item nav-link active px-2 py-2">About</a></li>
+                            <li><a href="product.html" class="nav-item nav-link px-2 py-2">Our Product</a></li>
+                            <li><a href="blog.html" class="nav-item nav-link px-2 py-2">Achievement</a></li>
+                            <li><a href="contact.html" class="nav-item nav-link px-2 py-2">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="d-flex flex-column gap-3 py-3">
+                        <a href="tel:+97142851918"
+                            class="btn btn-primary call-btn rounded-pill d-inline-flex align-items-center flex-shrink-0 py-2 px-4 w-100">
+                            <i class="fa fa-phone me-2"></i>Call Us
+                        </a>
+                        <a href="mailto:info@cigior.com"
+                            class="btn btn-outline-primary mail-btn rounded-pill d-inline-flex align-items-center flex-shrink-0 py-2 px-4 w-100">
+                            <i class="fa fa-envelope me-2"></i>Mail Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
             <!-- Header Start -->
             <div class="container-fluid bg-breadcrumb">
@@ -157,64 +198,55 @@
     </div>
 </div>
 <!-- feature End -->
-         <!-- About Start -->
-<div class="container-fluid about overflow-hidden py-5">
-    <div class="container py-5">
-        <div class="row g-5">
-            <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
-                <div class="about-img rounded h-100">
-                    <img src="img/PHOTO-2025-05-30-03-07-58.jpg" class="img-fluid rounded h-100 w-100" style="object-fit: cover;" alt="About Cigior">
-                    <div class="about-exp"><span>Over Years of Excellence</span></div>
+<!-- Modern About Us Section Start -->
+<div class="container py-5">
+    <div class="row align-items-center g-5">
+        <!-- Left: Text Headline -->
+        <div class="col-lg-4 order-1 order-lg-1">
+            <h5 class="text-uppercase mb-2" style="color:#ab2239; letter-spacing:2px;">About Us</h5>
+            <h2 class="fw-bold mb-3" style="font-family:'Playfair Display',serif; color:#1a2550;">Delivering Premium Tobacco Experiences</h2>
+            <p class="text-muted" style="font-size:1.14rem;">
+                Cigior is a trusted name in the tobacco industry, known for blending traditional craftsmanship with modern innovation. Over two decades of excellence have built a loyal following, thanks to our strict standards and passion for quality.
+            </p>
+        </div>
+        <!-- Center: Feature Cards -->
+        <div class="col-lg-4 order-3 order-lg-2 d-flex flex-column align-items-center">
+            <div class="feature-card glass-card d-flex align-items-center mb-4 px-4 py-3 w-100 shadow" style="max-width: 370px;">
+                <span class="feature-icon me-3" style="background:#1a2550;">
+                    <i class="fas fa-user-check"></i>
+                </span>
+                <div>
+                    <div class="fw-bold" style="color:#1a2550;">Satisfied Customers</div>
+                    <div class="text-muted small">Thousands trust Cigior for unwavering quality and service.</div>
                 </div>
             </div>
-            <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
-                <div class="about-item">
-                    <h4 class="text-primary text-uppercase">About Us</h4>
-                    <h1 class="display-3 mb-3">Delivering Premium Tobacco Experiences</h1>
-                    <p class="mb-4">
-                        Cigior stands as a trusted name in the tobacco industry, renowned for delivering quality, innovation, and satisfaction to discerning smokers. With over two decades of expertise, we blend traditional craftsmanship with modern manufacturing to offer a range of cigarettes that cater to every taste—from bold and robust to smooth and refined. Our commitment to quality control and world-class standards ensures a remarkable smoking experience in every pack.
-                    </p>
-                    <div class="bg-light rounded p-4 mb-4">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="d-flex">
-                                    <div class="pe-4">
-                                        <div class="rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
-                                            <i class="fas fa-user-check text-white fa-2x"></i>
-                                        </div>
-                                    </div>
-                                    <div class="">
-                                        <a href="#" class="h4 d-inline-block mb-3">Satisfied Customers</a>
-                                        <p class="mb-0">Thousands of loyal customers choose Cigior for our unwavering dedication to quality and satisfaction.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <div class="feature-card glass-card d-flex align-items-center px-4 py-3 w-100 shadow" style="max-width: 370px;">
+                <span class="feature-icon me-3" style="background:#ab2239;">
+                    <i class="fas fa-leaf"></i>
+                </span>
+                <div>
+                    <div class="fw-bold" style="color:#ab2239;">World-Class Standards</div>
+                    <div class="text-muted small">Crafted from the finest leaves, produced in state-of-the-art facilities.</div>
+                </div>
+            </div>
+        </div>
+        <!-- Right: Image with Badge -->
+        <div class="col-lg-4 order-2 order-lg-3 d-flex justify-content-lg-end justify-content-center">
+            <div class="position-relative" style="min-width:300px; max-width:360px;">
+                <img src="img/PHOTO-2025-05-30-03-07-58.jpg" class="img-fluid rounded-4 shadow w-100" style="object-fit:cover; min-height:330px;">
+                <div style="position:absolute; bottom:1.5rem; left:1.5rem;">
+                    <div class="glass-badge px-4 py-2 rounded-pill fw-semibold">
+                        <i class="fa fa-award me-2"></i>
+                        Over 20 Years of Excellence
                     </div>
-                    <div class="bg-light rounded p-4 mb-4">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="d-flex">
-                                    <div class="pe-4">
-                                        <div class="rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
-                                            <i class="fas fa-leaf text-white fa-2x"></i>
-                                        </div>
-                                    </div>
-                                    <div class="">
-                                        <a href="#" class="h4 d-inline-block mb-3">World-Class Standards</a>
-                                        <p class="mb-0">Every Cigior product is crafted using high-grade tobacco leaves and manufactured in state-of-the-art facilities.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#" class="btn btn-secondary rounded-pill py-3 px-5">Read More</a>
                 </div>
             </div>
         </div>
     </div>
+  
 </div>
-<!-- About End -->
+
+
 
             <!-- Fact Counter -->
 <div class="container-fluid counter py-5" >
@@ -389,25 +421,10 @@
 
 
 
-        <!-- Footer Start -->
+      <!-- Footer Start -->
         <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
     <div class="container py-5">
-        <div class="row g-5 mb-5 align-items-center">
-            <div class="col-lg-7">
-                <div class="position-relative mx-auto">
-                    <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email to Subscribe">
-                    <button type="button" class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Subscribe</button>
-                </div>
-            </div>
-            <div class="col-lg-5">
-                <div class="d-flex align-items-center justify-content-center justify-content-lg-end">
-                    <a class="btn btn-secondary btn-md-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-secondary btn-md-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-secondary btn-md-square rounded-circle me-3" href="#"><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-secondary btn-md-square rounded-circle me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-        </div>
+        
         <div class="row g-5">
             <div class="col-md-6 col-lg-6 col-xl-3">
                 <div class="footer-item d-flex flex-column">
@@ -416,23 +433,25 @@
                         <p class="mb-3">
                             Cigior Tobacco Trading FZE stands as a leading name in the premium tobacco industry, specializing in the global trade, distribution, and export of high-quality cigarette products. Experience reliability, compliance, and a commitment to excellence with every partnership.
                         </p>
+                        
                     </div>
-                    <div class="position-relative">
-                        <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
-                        <button type="button" class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">Sign Up</button>
-                    </div>
+                     <div class="d-flex ">
+                    <a class="btn btn-primary btn-md-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f text-light" ></i></a>
+                    <a class="btn btn-primary btn-md-square rounded-circle me-3" href="#"><i class="fab fa-twitter text-light" ></i></a>
+                    <a class="btn btn-primary btn-md-square rounded-circle me-3" href="#"><i class="fab fa-instagram text-light" ></i></a>
+                    <a class="btn btn-primary btn-md-square rounded-circle me-0" href="#"><i class="fab fa-linkedin-in text-light" ></i></a>
+                </div>
+                   
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 col-xl-3">
                 <div class="footer-item d-flex flex-column">
                     <h4 class="text-white mb-4">Quick Links</h4>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> About Cigior</a>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> Our Products</a>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> Services</a>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> Trading Network</a>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> Blog</a>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
+                    <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Cigior</a>
+                    <a href="product.html"><i class="fas fa-angle-right me-2"></i> Our Products</a>
+                    <a href="blog.html"><i class="fas fa-angle-right me-2"></i> Achievements</a>
+                    <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+                    
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 col-xl-3">
