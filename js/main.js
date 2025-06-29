@@ -1,3 +1,20 @@
+
+
+// Age Verification Sidebar
+  document.addEventListener('DOMContentLoaded', function() {
+    if (!localStorage.getItem('cigior_age_verified')) {
+      document.getElementById('ageSidebar').style.display = 'flex';
+    }
+    document.getElementById('ageYes').onclick = function() {
+      localStorage.setItem('cigior_age_verified', 'true');
+      document.getElementById('ageSidebar').style.display = 'none';
+    };
+    document.getElementById('ageNo').onclick = function() {
+      window.location.href = "https://www.google.com";
+    };
+  });
+
+
 (function ($) {
     "use strict";
 
