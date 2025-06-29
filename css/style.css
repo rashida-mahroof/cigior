@@ -383,6 +383,8 @@ body{
     .carousel .carousel-inner .carousel-item .carousel-caption-2 {
         max-width: 100% !important;
         justify-content: center;
+       
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.5));
     }
 
     .carousel-caption-2-content {
