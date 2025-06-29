@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+h1, h2, .hero-title, h3,h4,h5,h6 {
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+}
 
 /*** Spinner Start ***/
 /*** Spinner ***/
+
 #spinner {
     opacity: 0;
     visibility: hidden;
